@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pokedex-container">
+        <div class="header">
+            <h1 class="pokedex-title">Pokédex</h1>
+            <div class="search-bar">
+                <input type="number" id="pokemonNumber" placeholder="Buscar el Numero del Pokémon">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <div class="navigation-buttons">
+                <button class="prev-btn" id="previousButton">&lt;</button>
+                <button class="next-btn" id="nextButton">&gt;</button>
+            </div>
+        </div>
+        <div id="pokemonData" class="pokedex">
+            <div class="left-panel">
+                <div class="pokemon-info">
+                    <h2 class="pokemon-name" id="pokemonName"></h2>
+                    <p class="pokemon-id" id="pokemonNumberDisplay"></p>
+                    <img class="pokemon-image" id="pokemonImage" src="" alt="">
+                    <div class="buttons">
+                        <button class="shiny-btn" id="toggleShinyButton">Shiny</button>
+                    </div>
+                    <div class="type-container" id="pokemonType"></div>
+                </div>
+                <p class="pokemon-description" id="pokemonDescription"></p>
+            </div>
+            <div class="right-panel">
+                <div class="stats">
+                    <h2>Estadísticas básicas</h2>
+                    <ul id="pokemonStats"></ul>
+                </div>
+                <div class="evolutions">
+                    <h2>Linea Evolutiva</h2>
+                    <div id="pokemonEvolution"></div>
+                </div>
+                <div class="moves">
+                    <h2>Movimientos</h2>
+                    <ul id="pokemonMoves"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
